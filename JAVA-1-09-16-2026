@@ -1,1 +1,263 @@
+//JAVA PROGRAMMING LANGUAGE
+
+public class Main {
+	public static void main(string[] args{})
+		System.out.println("Hello World!")
+	}
+
+}
+
+//--Declaring variables of different data types--
+int - whole number
+double - double precision of decimal number
+float - single precision of decimal number using 'f'
+char - single character
+boolean - True or False
+String - text
+
+//
+int 	age		=            20;	//whole number
+^	 ^		^             ^
+types	variables	equivalent            value
+
+int age = 20; 
+double price = 40.55; // double condition
+float weight = 85.9f;// single condition
+char grade = 'A'; // single character
+boolean isStudent = True; // True or False
+String name = "Tobias"; // text // not primitive
+
+//---Output using system.out.println---
+
+system.out.println("Name:" + name);
+system.out.println("Age:" + age);
+system.out.println("Price:" + price);
+system.out.println("Weight:" + weight);
+system.out.println("Grade:" + grade);
+system.out.println("Is Student?" + isStudent);
+
+
+
+//---Getting input using Scanner---
+import jave.util.Scanner;
+public class Main {
+	public static void main(string[] args{}){
+System.out.print("\nEnter your City: ");
+String userCity = scanner.next(); //prints one word(stops at whitespace
+System.out.println("You live in:" + userCity);
+
+//--Reading a full line(includin a spaces)---
+scanner.nextline(); // clears leftover newline from previous next()
+System.out.print("Enter a sentence about youself: ");
+String FullSentence=scanner.nextline(); // read the emtire line
+System.out.println("You said: "+fullSentence
+
+scanner.close()
+	}
+}
+
+//Operations and Expression
+public class Main{
+	public static void main(String[] args){
+		//+,-,*,/,%
+	int a = 10, b = 3;
+	System.out.println("a + b = " + (a + b));
+
+	int a = 10, b = 28;
+	System.out.println("a - b = " + (a - b));
+
+	int a = 28, b = 10;
+	System.out.println("a * b = " + (a * b));
+
+	int a = 28, b = 10;
+	System.out.println("a / b = " + (a / b));
+
+	int a = 28, b = 10;
+	System.out.println("a % b = " + (a  % b));
+
+double x = 10, y = 3;
+System.out.println("x / y = "+ (x/y)) //Output x / y = 3.3333333335
+
+System.out.println("\na == b: " + ( a == b)) //output a == b: Flase
+System.out.println("\na != b: " + ( a != b)) //output a != b: True
+System.out.println("\na > b: " + ( a > b)) //output a > b: True
+System.out.println("\na < b: " + ( a < b)) //output a < b: False
+
+boolean p = true,1 q = false,0;
+System.out.println("\np && q: " + (p && q)); //output: false
+System.out.println("p || q)); true
+System.out.println("!p: " + (!p));
+
+int score = 50;
+score after += 10
+System.out.println("\nscore after += 10: " + score); //output:score after += 10: 60
+score *= 2;
+System.out.println("\score after *=2: " + score); \\output:score after *=2: 120
+
+
+int counter = 5 
+System.out.println("\ncounter++ (post):  " + counter++); //output: counter++ (post): 5
+System.out.println("counter now: " + counter); //counter now: 6
+System.out.println("++counter (pre): " + ++counter //output: ++counter (pre): 15
+
+//Control Flow(if /else if/ else, switch, loops)
+// if / else if / if
+
+import javautil.Scanner;
+
+public class Main {
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Enter your exam score: ");
+	int score = scanner.nextInt();
+
+	if (score >= 90){
+		System.out.println("Grade: A");
+	}else if (score >= 80){
+		System.out.println("Grade: B");
+	}else if (score >= 75){
+		System.out.println("Grade: C");
+	}else{
+		System.out.println("Grade: F");
+	}
+
+//Switch Case
+System.out.print("|nEnter a day number (1-7): ");
+int day = scanner.nextInt();
+
+switch (day) {
+    case 1: System.out.println("Monday"); break;
+    case 2: System.out.println("Tuesday"); break;
+    case 3: System.out.println("Wednesday"); break;
+    case 4: System.out.println("Thursday"); break;
+    case 5: System.out.println("Friday"); break;
+    case 6: System.out.println("Saturday"); break;
+    case 7: System.out.println("Sunday"); break;
+    default: System.out.println("Invalid day"); break;
+	}
+
+System.out.println("\nCounting 1 to 5 with a for loop:");
+
+
+	}
+}
+
+
+
+
+
+AIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAI
+
+
+// ALL IMPORTS MUST BE AT THE VERY TOP
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // --- 1. HELLO WORLD ---
+        System.out.println("Hello World!");
+
+        // --- 2. DECLARING VARIABLES ---
+        int age = 20; 
+        double price = 40.55; 
+        float weight = 85.9f;
+        char grade = 'A'; 
+        boolean isStudent = true; 
+        String name = "Tobias"; 
+
+        // --- 3. OUTPUT VARIABLES ---
+        System.out.println("Name:" + name);
+        System.out.println("Age:" + age);
+        System.out.println("Price:" + price);
+        System.out.println("Weight:" + weight);
+        System.out.println("Grade:" + grade);
+        System.out.println("Is Student?" + isStudent);
+
+        // --- 4. GETTING INPUT USING SCANNER ---
+        System.out.print("\nEnter your City: ");
+        String userCity = scanner.next(); 
+        System.out.println("You live in:" + userCity);
+
+        scanner.nextLine(); // clears leftover newline
+        System.out.print("Enter a sentence about yourself: ");
+        String fullSentence = scanner.nextLine(); 
+        System.out.println("You said: " + fullSentence);
+
+        // --- 5. OPERATIONS AND EXPRESSIONS ---
+        int a = 10, b = 3;
+        System.out.println("a + b = " + (a + b));
+
+        b = 28; 
+        System.out.println("a - b = " + (a - b));
+
+        a = 28; b = 10;
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+
+        double x = 10, y = 3;
+        System.out.println("x / y = " + (x / y)); 
+
+        System.out.println("\na == b: " + (a == b)); 
+        System.out.println("\na != b: " + (a != b)); 
+        System.out.println("\na > b: " + (a > b)); 
+        System.out.println("\na < b: " + (a < b)); 
+
+        boolean p = true, q = false;
+        System.out.println("\np && q: " + (p && q)); 
+        System.out.println("p || q: " + (p || q)); 
+        System.out.println("!p: " + (!p));
+
+        int scoreValue = 50;
+        scoreValue += 10;
+        System.out.println("\nscore after += 10: " + scoreValue); 
+        scoreValue *= 2;
+        System.out.println("score after *=2: " + scoreValue); 
+
+        int counter = 5; 
+        System.out.println("\ncounter++ (post):  " + counter++); 
+        System.out.println("counter now: " + counter); 
+        System.out.println("++counter (pre): " + ++counter); 
+
+        // --- 6. CONTROL FLOW (IF / ELSE IF) ---
+        System.out.print("\nEnter your exam score: ");
+        int score = scanner.nextInt();
+
+        if (score >= 90) {
+            System.out.println("Grade: A");
+        } else if (score >= 80) {
+            System.out.println("Grade: B");
+        } else if (score >= 75) {
+            System.out.println("Grade: C");
+        } else {
+            System.out.println("Grade: F");
+        }
+
+        // --- 7. SWITCH CASE ---
+        System.out.print("\nEnter a day number (1-7): ");
+        int day = scanner.nextInt();
+
+        switch (day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            case 4: System.out.println("Thursday"); break;
+            case 5: System.out.println("Friday"); break;
+            case 6: System.out.println("Saturday"); break;
+            case 7: System.out.println("Sunday"); break;
+            default: System.out.println("Invalid day"); break;
+        }
+
+        // --- 8. FOR LOOP ---
+        System.out.println("\nCounting 1 to 5 with a for loop:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+        
+        scanner.close();
+    } // End of main method
+} // End of Main class
 
